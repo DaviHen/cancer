@@ -1,0 +1,278 @@
+:root{
+    --text-color: #fff;
+    --first-color: #5D12D2;
+    --second-color: #B931FC;
+    --third-color: #FF6AC2;
+    --forth-color: #FFE5E5;
+}
+
+body{
+    background: linear-gradient(180deg, var(--forth-color), var(--third-color));
+    color: #000;
+}
+
+header{
+    height: calc(100vh - 80px);
+}
+
+.nav-links ul li a{
+    color: #000;
+}
+
+.innerHeader-section{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-img{
+    height: 100%;
+}
+
+.header-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.header-title h1{
+    font-size: 5rem;
+    margin-left: -5%;
+}
+
+/* Cancer mama section */
+
+.cancer-mamaSection{
+    width: 80%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cancer-mamaSection h2{
+    font-size: 50px;
+}
+
+.cancer-mamaExp{
+    margin-top: 2%;
+}
+
+.cancer-mamaExp h3{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.cancer-mamaExp p{
+    font-size: 20px;
+}
+
+/*  */
+
+.risk-Exp{
+    margin: 5% 0;
+}
+
+.risk-Exp h3{
+    font-size: 30px;
+}
+
+.risk-Exp p{
+    font-size: 20px;
+}
+
+.risk-list{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin: 5% 0;
+}
+
+.risk-listImg{
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+.risk-listImg img{
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+}
+
+.risk-listInfo ul h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.risk-listInfo ul li{
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.risk-listInfo ul li ul li{
+    margin: 10px 5%;
+}
+
+/*  */
+
+.prevention-section{
+    margin-top: 10%;
+}
+
+.prevention-section h2{
+    font-size: 30px;
+    margin: 1% 0;
+}
+
+.prevention-section p{
+    font-size: 20px;
+}
+
+.prevention-section div ul{
+    margin: 2%;
+}
+
+.prevention-section div ul li{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/*  */
+
+.symptoms-section{
+    margin-top: 5%;
+}
+
+.symptoms-section h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.symptoms-section p{
+    font-size: 20px;
+}
+
+/*  */
+
+.notice-section{
+    margin-top: 5%;
+}
+
+.notice-section h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.notice-section p{
+    font-size: 20px;
+}
+
+/*  */
+
+.statistics-section{
+    margin: 5% 0;
+}
+
+.statistics-section h2{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.statistics-section p{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    
+    .innerHeader-section{
+        justify-content: center;
+    }
+
+    .header-img{
+        height: 50%;
+    }
+
+    .header-title h1{
+        margin: 0;
+    }
+
+    /*  */
+
+    .container main{
+        width: 100%;
+    }
+
+    main section{
+        margin: 5% auto;
+    }
+
+    .cancer-mamaSection, .risk-section, .prevention-section, .symptoms-section, .notice-section{
+        width: 80%;
+    }
+
+    .statistics-section{
+        width: 80%;
+        margin: 0 auto 5%;
+    }
+
+    .cancer-mamaExp{
+        margin-top: 0%;
+    }
+    
+    .cancer-mamaExp h3{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .innerHeader-section{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-title h1{
+        font-size: 3rem;
+    }
+
+    .cancer-mamaSection{
+        margin-top: 5rem;
+    }
+
+    .cancer-mamaSection h2{
+        margin: 0;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+
+    .risk-list{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .risk-list h3{
+        font-size: 2rem;
+    }
+
+    .risk-listInfo ul{
+        margin-top: 20px;
+        list-style-position: inside;
+    }
+
+}

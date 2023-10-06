@@ -1,0 +1,63 @@
+/* CSS base */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main {
+    width: 80%;
+}
+
+.nav-menu {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-height: 80px;
+    width: 100%;
+    padding: 5px;
+}
+
+.nav-links {
+    margin: 0 10px;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links ul li {
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: color .5s;
+}
+
+.nav-links ul li a:hover {
+    color: var(--third-color);
+}

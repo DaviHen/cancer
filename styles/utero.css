@@ -1,0 +1,204 @@
+:root{
+    --text-color: #fff;
+    --first-color: #5D12D2;
+    --second-color: #B931FC;
+    --third-color: #FF6AC2;
+    --forth-color: #FFE5E5;
+}
+
+body{
+    background: linear-gradient(180deg, var(--second-color), var(--first-color));
+    color: #fff;
+    
+}
+
+header{
+    height: calc(100vh - 80px);
+}
+
+.innerHeader-section{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-img{
+    height: 100%;
+}
+
+.header-img img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.header-title h1{
+    font-size: 5rem;
+    text-shadow: 0px 0px 2px black;
+}
+
+/*  */
+
+.whatIsIt-section{
+    margin-top: 10%;
+    width: 80%;
+}
+
+.whatIsIt-section h2{
+    font-size: 30px;
+}
+
+.whatIsIt-section p{
+    font-size: 20px;
+}
+
+/*  */
+
+.symptoms-section{
+    width: 80%;
+    margin-top: 5%;
+}
+
+.symptoms-section h2{
+    font-size: 30px;
+}
+
+.symptoms-section ul{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+/*  */
+
+.risk-section{
+    margin-top: 5%;
+    width: 80%;
+}
+
+.risk-section h2{
+    font-size: 30px;
+}
+
+.risk-section p{
+    font-size: 20px;
+}
+/*  */
+
+.diagnosis-section{
+    width: 80%;
+    margin-top: 5%;
+}
+
+.diagnosis-section h2{
+    font-size: 30px;
+}
+
+.diagnosis-section p{
+    font-size: 20px;
+}
+
+/*  */
+
+.treatment-section{
+    margin-top: 5%;
+    width: 80%;
+}
+
+.treatment-section h2{
+    font-size: 30px;
+}
+
+.treatment-section p{
+    font-size: 20px;
+}
+
+/*  */
+
+.prevention-section{
+    margin-top: 5%;
+    width: 80%;
+}
+
+.prevention-section h2{
+    font-size: 30px;
+}
+
+.prevention-section p{
+    font-size: 20px;
+}
+
+/*  */
+
+.statistics-section{
+    margin: 5% 0;
+    width: 80%;
+}
+
+.statistics-section h2{
+    font-size: 30px;
+}
+
+.statistics-section p{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1200px){
+    
+    .innerHeader-section{
+        justify-content: center;
+    }
+
+    .header-img{
+        height: 50%;
+    }
+
+    .header-title h1{
+        margin: 0;
+    }
+
+    /*  */
+
+    .container main{
+        width: 100%;
+    }
+
+    main section{
+        margin: 5% auto;
+    }
+
+    .whatIsIt-section, .symptoms-section, .risk-section, .diagnosis-section, .treatment-section, .prevention-section, .statistics-section{
+        width: 80%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 768px){
+    .innerHeader-section{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-img{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-title h1{
+        font-size: 3rem;
+    }
+
+    .whatIsIt-section{
+        margin-top: 5rem;
+    }
+    
+}
